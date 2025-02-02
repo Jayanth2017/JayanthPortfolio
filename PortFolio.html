@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    
+
+</head>
+
+<body>
+
+    <center>
+        <div id="a">
+            <a href="" class="nav">Home</a>
+            <a href="#about" class="nav">About</a>
+            <a href="#resume" class="nav">Resume</a>
+            <a href="#skills" class="nav">Skills</a>
+            <a href="#project" class="nav">Projects</a>
+            <a href="#contact" class="nav">Contact</a>
+        </div>
+    </center>
+    <div id="l1">
+        <p id="hlo">Hello! <br><span id="intro">I'm </span><span id="fn">Jayanth</span> 
+                <br> <span id="role">A Web Designer</span>
+            <br>
+            <a href=""><input type="button" value="HIRE ME" id="btn1"></a>
+            <a href="https://github.com/chandansk3"><input type="button" value="MY WORKS" id="btn2"></a>
+
+    </div>
+    <div id="l2">
+        <img class="rounded-circle" id="image_" src="c4-Photoroom.png" height="100px" width="30px"  alt="not found" srcset="">
+
+    </div>
+
+    <div id="about">
+        <p class="me" id="about">ABOUT ME</p>
+        <p id="mca">As a BCA graduate from Edurite collage of Management Studies in Shivamogga, I am driven to seek out
+            new experiences, connect with individuals from diverse backgrounds, and pursue opportunities for personal
+            growth through continuous learning.</p>
+    <div class="con">
+        <p id="content"> <span
+            id="title">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        Jayanth A H</p>
+        <p id="content"> <span id="title">Date Of Birth:&nbsp;&nbsp;&nbsp;&nbsp;</span> june 17,2003</p>
+        <p id="content"> <span
+                id="title">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            Shivamogga,
+            Karnataka.</p>
+        <p id="content"> <span
+                id="title">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            ahjayanth@gmail.com</p>
+        <p id="content"> <span
+                id="title">Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            81518074450</p>
+    </div>
+        
+        <!-- <p id="content"> <span
+                id="title">Projects:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <p id="counter"> 0</p></p> -->
+
+
+
+
+        <script>
+            // JavaScript to update the counter value
+            const counterElement = document.getElementById('counter');
+            const targetNumber = 10;
+            let currentNumber = 0;
+
+            function updateCounter() {
+                currentNumber += 1;
+                counterElement.textContent = currentNumber;
+
+                if (currentNumber < targetNumber) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counterElement.textContent = targetNumber;
+                }
+            }
+
+            // Start the counting animation
+            updateCounter();
+        </script>
+            <a href="#"><input type="button" value="HIRE ME" id="btn3"></a>
+    </div>
+
+    <div id="resume">
+        <p class="me_resume" id="resume">RESUME</p>
+        <p id="mca_resume">This is where you can discover information about my Education.</p>
+
+        <div id="left_">
+            <p id="edu">
+                <span id="year">2021-2024</span><br>
+                Bachelor of Computer Applications <br>
+                <span id="clg"> EDURITE COLLEGE OF MANAGEMENT STUDIES</span>
+            </p>
+        </div>
+        
+        <div id="right_">
+            <p id="edu">
+                <span id="year">2019-2021</span><br>
+                PUC(EBAS) <br>
+                <span id="clg"> SRI VIDYALAYA PU COLLEGE</span>
+            </p>
+        </div>
+        <div id="left_">
+            <p id="edu">
+                <span id="year">2018-2019</span><br>
+                SSLC <br>
+                <span id="clg"> SRI RAMAKRISHNA VIDYANIKETHANA SCHOOL</span>
+            </p>
+        </div>
+    </div>
+
+    <a href="#"><input type="button" value="DOWNLOAD CV" id="btn3"></a>
+
+
+    <div id="skills">
+        <p class="me_skills" id="skills">SKILLS</p>
+        <p id="mca_skills">This is where you can discover information about my SKILLS.</p>
+
+        <div id="sk1">
+            <p>HTML</p>
+            <progress value="90" max="100"></progress>
+            <p>CSS</p>
+            <progress value="80" max="100"></progress>
+            <p>JAVASCRIPT</p>
+            <progress value="60" max="100"></progress>
+            <p>MySql</p>
+            <progress value="1" max="100"></progress>
+        </div>
+        <div id="sk2">
+            <p>React.js</p>
+            <progress value="60" max="100"></progress>
+            <p>Java</p>
+            <progress value="" max="100"></progress>
+            <p>Spring boot</p>
+            <progress value="" max="100"></progress>
+            
+        </div>
+    </div>
+    <br><br>
+    <div id="project">
+        <p class="me_project" id="project">PROJECTS</p>
+        <p id="mca_project">This is where you can discover information about my PROJECTS.</p>
+        <div id="prj1">
+            <p id="proj">
+                <span id="year"></span><br>
+                <br>
+                <span id="about_proj"><a href="Blog.html">click here</a>
+                </span>
+            </p>
+        </div>
+        <div id="prj2">
+            <p id="proj">
+                <span id="year"></span><br>
+                 <br>
+                <span id="about_proj">  <a
+                        href="">click
+                        here</a></span>
+            </p>
+        </div>
+    </div>
+    </div>
+<!--     hello -->
+    <div id="project1">
+            <div id="prj1">
+                <p id="proj">
+                    <span id="year"></span><br>
+                    <br>
+                    <span id="about_proj"> <a
+                            href="">click
+                            here</a></span>
+                </p>
+            </div>
+            <div id="prj2">
+                
+            </div>
+        </div>
+    <br><br>
+
+    <div id="contact">
+        <p class="me_contact" id="contact">CONTACT ME</p>
+        <div id="con1">
+            <center>
+                <section>
+                    <form action="#" method="post">
+                        <input type="text" id="name_" name="name" required placeholder="Name">
+
+                        <input type="email" id="email" name="email" required placeholder="Email">
+
+                        <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
+                <p id="foot">&copy; 2025. Designed and Developed by Jayanth.</p>
+
+            </center>
+        </div>
+    </div>
+    <!-- <script>
+        // JavaScript to add and remove a class based on scroll position
+        document.addEventListener('scroll', function() {
+          const animatedElement = document.querySelector('.animated-element');
+          const scrollPosition = window.scrollY;
+    
+          if (scrollPosition > 100) {
+            animatedElement.classList.add('animated');
+          } else {
+            animatedElement.classList.remove('animated');
+          }
+        });
+      </script> -->
+</body>
+
+</html>
