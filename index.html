@@ -425,36 +425,67 @@
         </div>
         <div class="row pt-4 mt-5">
           <div class="col-12">
-            <form action="#" method="POST">
+            
+            <form action="#" method="POST" id="form">
               <div class="row d-flex justify-content-center">
-                <div class="col-lg-6">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name*" required>
-                    <label for="floatingInput">Enter Name*</label>
+                  <div class="col-lg-6">
+                      <input type="hidden" name="access_key" value="0bdefbb0-10b4-4271-b52c-50501e5ddf02">
+                      <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="floatingInput" name="name" placeholder="Enter Name*" required>
+                          <label for="floatingInput">Enter Name*</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Enter Email*" required>
+                          <label for="floatingEmail">Enter Email*</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="floatingPassword" name="phone" placeholder="Enter Phone*" required>
+                          <label for="floatingPassword">Enter Phone*</label>
+                      </div>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="Enter Email*" required>
-                    <label for="floatingEmail">Enter Email*</label>
+                  <div class="form-floating col-lg-6">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" name="message" style="height: 205px" required></textarea>
+                      <label for="floatingMessage" class="px-4">Enter Message*</label>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingPassword" placeholder="Enter Phone*" required>
-                    <label for="floatingPassword">Enter Phone*</label>
+                  <div class="col-12 mt-5 d-flex justify-content-center">
+                      <button class="btn btn-lg btn-outline-light" id="call">SEND MESSAGE</button>
                   </div>
-                </div>
-                <div class="form-floating col-lg-6">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 205px" required></textarea>
-                  <label for="floatingMessage" class="px-4">Enter Message*</label>
-                </div>
-                <div class="col-12 mt-5 d-flex justify-content-center">
-                  <button class="btn btn-lg btn-outline-light" id="call">SEND MESSAGE</button>
-                </div>
               </div>
-  
-            </form>
+          </form>
+          <div id="result"></div>
+          
+            
           </div>
         </div>
        </div>
+       <script>
+        const form = document.getElementById('form');
+    
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            const formData = new FormData(form);
+            formData.append("access_key", "0bdefbb0-10b4-4271-b52c-50501e5ddf02"); // Ensure access key is included
+    
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status === 200) {
+                    alert("Message reached successfully"); // Success alert
+                    form.reset(); // Reset form fields
+                }
+            })
+            .catch(error => {
+                alert("⚠️ Something went wrong! Please try again."); // General error alert
+            });
+        });
+    </script>
+    
      </section>
+
 
      <!-- Footer -->
      <footer>
@@ -487,5 +518,6 @@
 
 
     </script>
+   
   </body>
 </html>
