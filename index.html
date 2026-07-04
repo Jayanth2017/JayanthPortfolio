@@ -1,633 +1,983 @@
 <!DOCTYPE html>
-<!-- Website - www.codingnepalweb.com -->
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayanth Portfolio </title>
-    <!-- Linking CSS File -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Fontawesome link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Bootstrap link -->
+    <title>Jayanth — Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
-      
-  </head>
-  <body>
-    <!-- Header & Navbar -->
-    <header class="bg-dark fixed-top">
-      <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-3" href="#home">Jayanth A H</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-              
-              
-              
-              
-             <li class="nav-item mx-2">
-                <a class="nav-link"  href="#home">HOME</a>
-              </li>
-
-              
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#about">ABOUT</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#skills">SKILLS</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#projects">PROJECTS</a>
-              </li>              
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#certificate">CERTIFICATE</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#contact">CONTACT</a>
-              </li>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero or Showcase Section -->
-<section class="hero d-flex align-items-center justify-content-center" id="home">
-   <!-- Particles Background -->
-   
-
-  <div class="hero-section">
-    <div id="tsparticles"></div>
-   
-    <div class="hero-left">
-      <img src="img/home-bg.jpg" alt="Your Photo" />
-     
-    </div>
-    <div class="hero-right">
-      <h1>I'm a Full Stack Developer</h1>
-      <p>Specialized in Java, Spring Boot, React.js, and MySQL</p>
-      <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-4 btn-primary p-3">TELL ME MORE</a>
-    </div>
+    <!-- ===== SEPARATE CSS ===== -->
+    <link rel="stylesheet" href="css/style.css" />
     
-  </div>
+
+</head>
+<body>
+
+   
+
+<!-- ─── NAVBAR — Sticky · 80% Width · White Hover ─── -->
+<nav class="navbar-premium" id="mainNav">
+    <div class="nav-container">
+        <!-- Logo -->
+        <a href="#home" class="nav-brand">
+            <span class="brand-code">&lt;</span>J<span class="brand-code">/&gt;</span>
+            
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link ">About</a></li>
+            <li><a href="#skills" class="nav-link">Skill</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li> 
+            <li><a href="#cv" class="nav-link">Curriculum Vitae</a></li>
+            <li><a href="#certificate" class="nav-link">Certificate</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            
+            
+        </ul>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+            <a href="mailto:ahjayanth@email.com" class="nav-email">
+                <i class="fas fa-envelope"></i>
+                <span>ahjayanth@email.com</span>
+            </a>
+            <a href="tel:+91 8151807450" class="nav-cta">Let's Talk</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="nav-progress">
+        <div class="nav-progress-bar" id="scrollProgress"></div>
+    </div>
+</nav>
+    <!-- ─── HERO ─── -->
+<section class="hero" id="home">
+    <!-- Background Orbs -->
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-content">
+        <!-- ✅ Added container for centering -->
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- LEFT: Profile Image + Text -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                    <div class="hero-left-wrapper">
+                        <!-- Header Row: Image + Name -->
+                        <div class="hero-header-row">
+                            <div class="hero-profile-wrapper">
+                                <img src="img/profile-img.jpg" alt="Jayanth A H" class="hero-profile-large" />
+                                <div class="profile-ring"></div>
+                                <div class="profile-ring-2"></div>
+                                <div class="profile-badge">
+                                    <span class="badge-dot"></span>
+                                    Available for work
+                                </div>
+                            </div>
+                            <div class="hero-name-wrapper">
+                                <h1>
+                                    Hi, I'm <br />
+                                    <span class="highlight">Jayanth A H</span>
+                                </h1>
+                            </div>
+                        </div>
+
+                        <!-- Badge -->
+                        <div class="hero-badge">
+                            <span class="code-tag">&lt;developer&gt;</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="hero-sub">
+                            I develop <strong>Web applications</strong>, <strong>user interfaces</strong><br />
+                            and <strong>Mobile applications</strong>
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn-primary-glow"><span>Explore My Work →</span></a>
+                            <a href="#contact" class="btn-outline-glow">Let's Talk</a>
+                        </div>
+
+                        <!-- Social -->
+                        <div class="hero-social">
+                            <a href="https://github.com/Jayanth2017/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/jayanth-ah-977829222/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="tel:+91 8151807450" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                            <a href="mailto:ahjayanth@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: 3D Laptop -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+                    <div class="laptop-wrapper">
+                        <div class="laptop-3d" id="laptop3D">
+                            <!-- Screen -->
+                            <div class="laptop-screen">
+                                <div class="screen-bezel">
+                                    <div class="webcam-dot"></div>
+                                    <div class="code-editor">
+                                        <div class="editor-tabs">
+                                            <div class="tab active"><span class="tab-icon">📄</span> index.js</div>
+                                            <div class="tab"><span class="tab-icon">📄</span> App.jsx</div>
+                                        </div>
+                                        <div class="editor-content" id="codeEditor"></div>
+                                        <div class="editor-statusbar">
+                                            <span>UTF-8</span>
+                                            <span>JavaScript</span>
+                                            <span class="status-glow"> Ready</span>
+                                        </div>
+                                    </div>
+                                    <div class="screen-glare"></div>
+                                </div>
+                            </div>
+                            <div class="laptop-base">
+                                <div class="keyboard" id="keyboard"></div>
+                                <div class="trackpad"></div>
+                            </div>
+                            <div class="laptop-shadow"></div>
+                        </div>
+                        <div class="float-particle p1">&lt;/&gt;</div>
+                        <div class="float-particle p2">{ }</div>
+                        <div class="float-particle p3">() =&gt;</div>
+                        <div class="float-particle p4">import</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </div>
 </section>
 
 
-     <!-- About Section -->
-     <section class="container py-5" id="about">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
-          <h2>ABOUT</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me, my background, and what motivates me.</h5>
+    <!-- ─── ABOUT ─── -->
+<section class="about-section section-padding" id="about">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">About</span>
+            <h2 class="section-title">
+                Learn more about my <span class="highlight">journey</span>
+            </h2>
+            <p class="section-sub mx-auto">
+                Experience, and passion for building websites, software, and applications.
+            </p>
         </div>
-      </div>
-      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-          <h5>2018-2020</h5>
-          <h5>Early Passion for Technology</h5>
-          <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS, I gradually expanded my skills to include JavaScript and various frameworks.</p>
-        </div>
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="img/about-img-1.jpg" alt="img">
-        </div>
-      </div>
-      <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="img/about-img-2.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-          <h5>2021-2024</h5>
-          <h5>Higher Education and Career Growth</h5>
-          <p>During my university years, I studied computer science and gained hands-on experience through internships and freelance projects. This period fueled my passion for creating innovative solutions and solving  problems.</p>
-        </div>
-      </div>
-      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-          <h5>2025-Present</h5>
-          <h5>Professional Excellence and Continuous Learning</h5>
-          <p>Throughout my career, I have consistently sought opportunities to refine my skills and stay updated with the latest technologies. I strive for excellence in every project I undertake and aim to deliver valuable and impactful results.</p>
-        </div>
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="img/about-img-3.jpg" alt="img">
-        </div>
-      </div>
-      <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="img/about-img-4.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-          <h5>Future</h5>
-          <h5>Continuing to Make a Difference</h5>
-          <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive impact on society. I am eager to take on new challenges and collaborate with talented individuals.</p>
-        </div>
-      </div>
-      <div class="row justify-content-md-center mt-5 pt-5">
-        <div class="col-3 col-md-2 d-flex justify-content-center hire-text">
-          <h2 class="h4 d-flex justify-content-center align-items-center bg-primary text-white rounded-circle border border-5 border-dark-subtle">Your<br>Next<br>Hire</h2>
-        </div>
-        
-      </div> 
-      <a href="img/jResume.pdf" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3 col-md-2 ">Resume</a>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="container py-5 mt-3" id="skills">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2>SKILLS</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
-        </div>
-         
-             <div class="row">
-                 <div class="col-lg-6 p-4" style="background-color: rgb(205, 210, 208);">
-
-
-                     <h6>HTML</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 80%;">80%</div>
-                     </div><br>
-                     <h6>CSS</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 70%;">70%</div>
-                     </div><br>
-                     <h6>Bootstrap</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 75%;">75%</div>
-                     </div><br>
-                     <h6>ReactJS</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 60%;">60%</div>
-                     </div><br>
-                 </div>
-                 
-
-                 <div class="col-lg-6 p-4" style="background-color: rgb(205, 210, 208);">
-                     <h6>javaScript</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 70%;">70%</div>
-                     </div><br>
-                     <h6>SQL</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 70%;">70%</div>
-                     </div><br>
-                     <h6>java</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 70%;">70%</div>
-                     </div><br>
-                     <h6>Springboot</h6>
-                     <div class="progress">
-                         <div class="progress-bar progress-bar-striped progress-bar-animated"
-                             style="width: 50%;">50%</div>
-                             
-                    
-                          </div>
-
-                       </div>
+        <!-- 3D Timeline -->
+        <div class="timeline-3d" data-aos="fade-up" data-aos-delay="100">
+            
+            <!-- Item 1: 2020 – 2022 -->
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="150">
+                <div class="timeline-dot">
+                    <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-card">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="card-year">2020 – 2022</div>
+                            <h3 class="card-title">Getting Started with Development</h3>
+                            <p class="card-desc">
+                                Began my journey in web development by learning HTML, CSS, JavaScript, and modern development fundamentals. Built projects that strengthened my technical and problem-solving skills.
+                            </p>
+                        </div>
                     </div>
-      </div>
- </section>
-    
-    
-    <section class="container py-5" >
-      <div class="row mt-4 py-3">
-        
-      </div>
-      <div class="row justify-content-center">
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
-          <h3 class="mt-4 h4">Front-end Development</h3>
-          <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
-        </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
-          <h3 class="mt-4 h4">Backend Development</h3>
-          <p class="text-center">Proficient in Java backend development, with extensive experience in building robust and scalable RESTful APIs using Spring Boot. Skilled in database integration, including ORM tools like Hibernate, and ensuring high-performance server-side solutions.</p>
-        </div>
-    </section>
+                </div>
+                            </div>
 
-    <!-- PROJECT Section -->
-    <section class="container py-5" id="projects">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2>PROJECTS</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
-        </div>
-        <div class="row mt-5 mx-0 justify-content-center align-items-center">
-          <div class="col-lg-3 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/project1.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">E-commerce Website</h6>
-                <p class="card-text text-secondary">HTML/CSS/JavaScript/MySQL/Springboot</p>
-              </div>
+            <!-- Item 2: 2022 – 2024 -->
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="250">
+                <div class="timeline-dot">
+                    <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-card">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="card-year">2022 – 2024</div>
+                            <h3 class="card-title">Education &amp; Hands-On Experience</h3>
+                            <p class="card-desc">
+                                Expanded my knowledge through academic learning and practical projects. Focused on creating responsive websites, intuitive user interfaces, and efficient software solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/project2.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">navigation to move the car</h6>
-                <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/calculator-app.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Calculator App</h6>
-                <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-              </div>
-            </div>
-          </div>
-         <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/blog.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <a href="https://reacttrevelweb.netlify.app/" 
-                style="text-decoration: none;"><h6 class="card-title" >Travel Agency Website</h6></a>
-                <p class="card-text text-secondary">ReactJS/ReactRouter</p>
-              </div>
-            </div>
-          </div>
-           <!--
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/react.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Task Management App</h6>
-                <p class="card-text text-secondary">ReactJS</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/python.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Data Visualization</h6>
-                <p class="card-text text-secondary">Python/Plotly</p>
-              </div>
-            </div>
-          </div>-->
-        </div>
-      </div>      
-    </section>
 
-   
+            <!-- Item 3: 2024 – Present -->
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="350">
+                <div class="timeline-dot">
+                    <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-card">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="card-year">2024 – Present</div>
+                            <h3 class="card-title">Full Stack Development</h3>
+                            <p class="card-desc">
+                                Building modern websites, software, and applications using React.js, Java, Spring Boot, and MySQL. Delivering solutions that meet client requirements and provide excellent user experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
 
-    <!-- Curriculum Vitae Section -->
-    <section class="container py-5" id="cv">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
-          <h2>CURRICULUM VITAE</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">A small sampling of some of the projects I've worked on.</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
-          <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="img/profile-img.jpg" alt="profile-img">
-          <h2 class="mt-3">Jayanth A H</h2>
-          <ul class="list-unstyled contact-info">
-            <li><i class="fas fa-envelope me-2"></i> ahjayanth@gmail.com</li>
-            <li><i class="fas fa-phone me-2"></i> 8151807450</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i> Shivamogga</li>
-          </ul>
-          <ul class="social-icons my-5 d-flex justify-content-center">
-            <a href="https://github.com/Jayanth2017" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:ahjayanth@gmail.com" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/jayanth-ah-977829222/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-          </ul>
-          <h5>Technical Skills</h5>
-          <ul class="list-unstyled">
-            <li><b>Programming Languages/Frameworks:</b> Java, SQL ,Spring Boot </li>
-            <li><b>Web Technologies:</b> HTML, CSS, JavaScript, Bootstrap, ReactJS </li>
-            <li><b>Operating Systems:</b> Windows</li>
-            <li><b>Other Tools/Software:</b> VS code, Eclipse, MySQL</li>
-            <!-- Add or remove skills as needed -->
-          </ul>
-          <h5>Personal Interests</h5>
-          <ul class="list-unstyled">
-            <li>Vedio Editing</li>
-            <li>Traveling</li>
-            <li>Exercise</li>
-            <!-- Add or remove interests as needed -->
-          </ul>
-        </div>
-        <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
-          <h3>Profile</h3>
-          <hr>
-          <p>Aspiring Java Full-Stack Developer with expertise in frontend technologies like React.js and a strong 
-            foundation in backend development. Currently pursuing a Java full-stack development course to enhance my 
-            skills. Passionate about technology and entrepreneurship, I am also working on launching an e-commerce 
-            fashion website. Dedicated to continuous learning, innovation, and building scalable applications.</p>
-          <!--<h3>Highlights of Qualifications</h3>
-          <hr>
-          <ul>
-            <li>Qualification 1</li>
-            <li>Qualification 2</li>
-            <li>Qualification 3</li>
-             Add or remove qualifications as needed -->
-          </ul>
-          <h3>Education</h3>
-          <hr>
-          <dl>
-            <dt>2021 - 2024</dt>
-            <dd>Edurite Collage of Management Studies.</dd>
-            <dd>BCA</dd>
-          </dl>
-          
-          <hr>
-          <dl>
-            <dt>2018-2021</dt>
-            <dd>Shri Vidyalaya PU Collage</dd>
-            <dd>PUC</dd>
-          </dl>
-          <hr>
-          <dl>
-            <dt>2018</dt>
-            <dd>Sri Ramakrishna Vidyanikethana School</dd>
-            <dd>SSLC</dd>
-            <!-- Add or remove work experience entries as needed -->
-          </dl>
-          <hr>
-          <!-- <dl>
-            <dt>IT Vedant</dt>
-            <dd>Role/Position</dd>
-            <dd>Details of your involvement and contributions</dd>
-          </dl> -->
-        </div>
-      </div>      
-    </section>
+            <!-- Item 4: Future -->
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="450">
+                <div class="timeline-dot">
+                    <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-card">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="card-year">Future</div>
+                            <h3 class="card-title">Continuous Growth &amp; Innovation</h3>
+                            <p class="card-desc">
+                                Committed to learning new technologies, improving my expertise, and building high-quality websites, software, and applications that create real-world value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
 
-    <!--certificates-->
-    <section class="container py-5" id="certificate">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2>certificates</h2>
         </div>
-        <div class="row mt-5 mx-0 justify-content-center align-items-center">
-          <div class="col-lg-3 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <a href="img/cce_certificate20302_.jpg" style="text-decoration: none;"><img src="img/cce_certificate20302_.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Full-Stack Developer Certificate</h6>
-                <p class="card-text text-secondary">IT Vedant</p>
-              </div></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <a href="img/Java_fundamentals.pdf" style="text-decoration: none;"><img src="img/Screenshot 2025-07-02 001301.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Java Fundamentals</h6>
-                <p class="card-text text-secondary">IBM</p>
-              </div></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-             <a href="img/react_204_1751394640.jpg" style="text-decoration: none;"> <img src="img/react_204_1751394640.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">React</h6>
-                <p class="card-text text-secondary">IT Vedanth</p>
-              </div></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-             <a href="img/SQL_and RelationalDataBase.pdf" style="text-decoration: none;"> <img src="img/Screenshot 2025-07-02 001528.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">SQL and Relational Data Base</h6>
-                <p class="card-text text-secondary">IBM</p>
-              </div></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-             <a href="img/advancedwebdesign_224_1735887729.pdf" style="text-decoration: none;"> <img src="img/advancedwebdesign.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Advanced Web Design</h6>
-                <p class="card-text text-secondary">IT Vedanth</p>
-              </div></a>
-            </div>
-          </div>
-          <!--<div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/calculator-app.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Calculator App</h6>
-                <p class="card-text text-secondary">HTML/CSS/JavaScript</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/blog.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Blog Website</h6>
-                <p class="card-text text-secondary">HTML/CSS</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/react.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Task Management App</h6>
-                <p class="card-text text-secondary">ReactJS</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="img/python.jpg" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Data Visualization</h6>
-                <p class="card-text text-secondary">Python/Plotly</p>
-              </div>
-            </div>
-          </div>-->
-        </div>
-      </div>      
-    </section>
+    </div>
+</section>
+<!-- ================================================================
+     SKILLS SECTION — Orbital Laptop with Rotating Skills
+     Add this after your About section in index.html
+     ================================================================ -->
 
-     <!-- Contact Section -->
-     <section class="py-5" id="contact">
-      <div class="container-xxl py-5">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2 class="text-white">CONTACT ME</h2>
-          <h5 class="text-white fw-normal py-2 fst-italic">Interested if I'd be the right fit for your team? Fill in this form and I will respond within 24-48 hours.</h5>
+<section class="skills-section section-padding" id="skills">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Expertise</span>
+            <h2 class="section-title">
+                Full Stack <span class="highlight">Web Development</span>
+            </h2>
+            <p class="section-sub mx-auto">
+                Technologies I work with — orbiting around my development universe
+            </p>
         </div>
-        <div class="row pt-4 mt-5">
-          <div class="col-12">
+
+        <!-- Orbital Container -->
+        <div class="orbital-container" id="orbitalContainer">
             
-            <form action="#" method="POST" id="form">
-              <div class="row d-flex justify-content-center">
-                  <div class="col-lg-6">
-                      <input type="hidden" name="access_key" value="0bdefbb0-10b4-4271-b52c-50501e5ddf02">
-                      <div class="form-floating mb-3">
-                          <input type="text" class="form-control" id="floatingInput" name="name" placeholder="Enter Name*" required>
-                          <label for="floatingInput">Enter Name*</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                          <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="Enter Email*" required>
-                          <label for="floatingEmail">Enter Email*</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                          <input type="number" class="form-control" id="floatingPassword" name="phone" placeholder="Enter Phone*" required>
-                          <label for="floatingPassword">Enter Phone*</label>
-                      </div>
-                  </div>
-                  <div class="form-floating col-lg-6">
-                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" name="message" style="height: 205px" required></textarea>
-                      <label for="floatingMessage" class="px-4">Enter Message*</label>
-                  </div>
-                  <div class="col-12 mt-5 d-flex justify-content-center">
-                      <button class="btn btn-lg btn-outline-light" id="call">SEND MESSAGE</button>
-                  </div>
-              </div>
-          </form>
-          <div id="result"></div>
-          
-            
-          </div>
+            <!-- Laptop in Center -->
+            <div class="center-laptop" id="centerLaptop">
+                <div class="laptop-3d-mini">
+                    <div class="laptop-screen-mini">
+                        <div class="screen-bezel-mini">
+                            <div class="webcam-dot-mini"></div>
+                            <div class="code-editor-mini">
+                                <div class="editor-header-mini">
+                                    <span class="dot-mini red"></span>
+                                    <span class="dot-mini yellow"></span>
+                                    <span class="dot-mini green"></span>
+                                    <span class="editor-title-mini">developer.js</span>
+                                </div>
+                                <div class="editor-body-mini">
+                                    <div class="code-line-mini"><span class="keyword-mini">const</span> dev = {</div>
+                                    <div class="code-line-mini"><span class="indent-mini"></span><span class="prop-mini">name</span>: <span class="str-mini">"Jayanth"</span>,</div>
+                                    <div class="code-line-mini"><span class="indent-mini"></span><span class="prop-mini">role</span>: <span class="str-mini">"Full Stack"</span></div>
+                                    <div class="code-line-mini">};</div>
+                                    <div class="code-line-mini"><span class="keyword-mini">while</span>(<span class="var-mini">alive</span>) {</div>
+                                    <div class="code-line-mini"><span class="indent-mini"></span><span class="fn-mini">build</span>();</div>
+                                    <div class="code-line-mini">}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="laptop-base-mini"></div>
+                </div>
+                <div class="laptop-glow-mini"></div>
+            </div>
+
+            <!-- Orbiting Skill Icons -->
+            <div class="orbit-ring" id="orbitRing">
+                <!-- CSS3 -->
+                <div class="orbit-item" data-skill="CSS3" style="--color: #1572B6;">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span class="orbit-tooltip">CSS3</span>
+                </div>
+                <!-- JavaScript -->
+                <div class="orbit-item" data-skill="JavaScript" style="--color: #F7DF1E;">
+                    <i class="fa-brands fa-js"></i>
+                    <span class="orbit-tooltip">JavaScript</span>
+                </div>
+                <!-- React.js -->
+                <div class="orbit-item" data-skill="React.js" style="--color: #61DAFB;">
+                    <i class="fa-brands fa-react"></i>
+                    <span class="orbit-tooltip">React.js</span>
+                </div>
+                <!-- Bootstrap -->
+                <div class="orbit-item" data-skill="Bootstrap" style="--color: #7952B3;">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <span class="orbit-tooltip">Bootstrap</span>
+                </div>
+                <!-- Java -->
+                <div class="orbit-item" data-skill="Java" style="--color: #007396;">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="orbit-tooltip">Java</span>
+                </div>
+                <!-- Spring Boot -->
+                <div class="orbit-item" data-skill="Spring Boot" style="--color: #6DB33F;">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span class="orbit-tooltip">Spring Boot</span>
+                </div>
+                <!-- Python -->
+                <div class="orbit-item" data-skill="Python" style="--color: #3776AB;">
+                    <i class="fa-brands fa-python"></i>
+                    <span class="orbit-tooltip">Python</span>
+                </div>
+                <!-- REST API -->
+                <div class="orbit-item" data-skill="REST API" style="--color: #FF6C37;">
+                    <i class="fa-solid fa-link"></i>
+                    <span class="orbit-tooltip">REST API</span>
+                </div>
+                <!-- MySQL -->
+                <div class="orbit-item" data-skill="MySQL" style="--color: #4479A1;">
+                    <i class="fa-solid fa-database"></i>
+                    <span class="orbit-tooltip">MySQL</span>
+                </div>
+                <!-- Git -->
+                <div class="orbit-item" data-skill="Git" style="--color: #F05032;">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span class="orbit-tooltip">Git</span>
+                </div>
+                <!-- GitHub -->
+                <div class="orbit-item" data-skill="GitHub" style="--color: #181717;">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="orbit-tooltip">GitHub</span>
+                </div>
+                <!-- Postman -->
+                <div class="orbit-item" data-skill="Postman" style="--color: #FF6C37;">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span class="orbit-tooltip">Postman</span>
+                </div>
+                <!-- Linux -->
+                <div class="orbit-item" data-skill="Linux" style="--color: #FCC624;">
+                    <i class="fa-brands fa-linux"></i>
+                    <span class="orbit-tooltip">Linux</span>
+                </div>
+            </div>
+
+            <!-- Orbital ring glow -->
+            <div class="orbit-glow"></div>
         </div>
-       </div>
-       <script>
-        const form = document.getElementById('form');
-    
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-    
-            const formData = new FormData(form);
-            formData.append("access_key", "0bdefbb0-10b4-4271-b52c-50501e5ddf02"); // Ensure access key is included
-    
-            fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                body: formData
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status === 200) {
-                    alert("Message reached successfully"); // Success alert
-                    form.reset(); // Reset form fields
-                }
-            })
-            .catch(error => {
-                alert("⚠️ Something went wrong! Please try again."); // General error alert
-            });
-        });
+    </div>
+</section>
+<!-- ================================================================
+     PROJECTS SECTION — Floating Animated Cards
+     Add this after your Skills section in index.html
+     ================================================================ -->
+
+<section class="projects-section section-padding" id="projects">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Portfolio</span>
+            <h2 class="section-title">
+                Featured <span class="highlight">Projects</span>
+            </h2>
+            <p class="section-sub mx-auto">
+                A collection of websites, software, and applications I've built
+            </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+            <!-- Project 1: E-Commerce Platform -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="img/project1.png" alt="E-Commerce Platform" />
+                    <div class="project-overlay">
+                        <a href="#" class="project-preview"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-desc">
+                        Full-featured online store with product management, cart, payment integration, and order tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag" style="color:#E34F26;">HTML5</span>
+                        <span class="tech-tag" style="color:#1572B6;">CSS3</span>
+                        <span class="tech-tag" style="color:#F7DF1E;">JavaScript</span>
+                        <span class="tech-tag" style="color:#6DB33F;">Spring Boot</span>
+                        <span class="tech-tag" style="color:#4479A1;">MySQL</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <!-- Project 2: Car Navigation System -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="img/project2.png" alt="Car Navigation System" />
+                    <div class="project-overlay">
+                        <a href="#" class="project-preview"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Car Navigation System</h3>
+                    <p class="project-desc">
+                        Interactive navigation tool with real-time route mapping, location tracking, and voice guidance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag" style="color:#E34F26;">HTML5</span>
+                        <span class="tech-tag" style="color:#1572B6;">CSS3</span>
+                        <span class="tech-tag" style="color:#F7DF1E;">JavaScript</span>
+                        <span class="tech-tag" style="color:#61DAFB;">React.js</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <!-- Project 3: Calculator App -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="img/calculator-app.jpg" alt="Calculator App" />
+                    <div class="project-overlay">
+                        <a href="#" class="project-preview"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Calculator App</h3>
+                    <p class="project-desc">
+                        Modern calculator with basic and scientific operations, history log, and dark/light themes.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag" style="color:#E34F26;">HTML5</span>
+                        <span class="tech-tag" style="color:#1572B6;">CSS3</span>
+                        <span class="tech-tag" style="color:#F7DF1E;">JavaScript</span>
+                        <span class="tech-tag" style="color:#7952B3;">Bootstrap</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <!-- Project 4: Travel Agency Website -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-image">
+                    <img src="img/blog.jpg" alt="Travel Agency Website" />
+                    <div class="project-overlay">
+                        <a href="https://reacttrevelweb.netlify.app/" target="_blank" class="project-preview"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Travel Agency Website</h3>
+                    <p class="project-desc">
+                        Full-featured travel booking platform with destination guides, tour packages, and user reviews.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag" style="color:#61DAFB;">React.js</span>
+                        <span class="tech-tag" style="color:#F7DF1E;">JavaScript</span>
+                        <span class="tech-tag" style="color:#1572B6;">CSS3</span>
+                        <span class="tech-tag" style="color:#E34F26;">HTML5</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="https://reacttrevelweb.netlify.app/" target="_blank" class="project-link">Live Demo →</a>
+                        <a href="#" class="project-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <!-- Project 5: Task Management App -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-image">
+                    <img src="img/react.jpg" alt="Task Management App" />
+                    <div class="project-overlay">
+                        <a href="#" class="project-preview"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Task Management App</h3>
+                    <p class="project-desc">
+                        Productivity tool with task boards, drag-and-drop, deadlines, team collaboration, and notifications.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag" style="color:#61DAFB;">React.js</span>
+                        <span class="tech-tag" style="color:#F7DF1E;">JavaScript</span>
+                        <span class="tech-tag" style="color:#7952B3;">Bootstrap</span>
+                        <span class="tech-tag" style="color:#FF6C37;">REST API</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <!-- Project 6: Data Dashboard -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-image">
+                    <img src="img/python.jpg" alt="Data Dashboard" />
+                    <div class="project-overlay">
+                        <a href="#" class="project-preview"><i class="fas fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title">Data Dashboard</h3>
+                    <p class="project-desc">
+                        Interactive analytics dashboard with real-time charts, data filters, and export capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag" style="color:#007396;">Java</span>
+                        <span class="tech-tag" style="color:#6DB33F;">Spring Boot</span>
+                        <span class="tech-tag" style="color:#4479A1;">MySQL</span>
+                        <span class="tech-tag" style="color:#FF6C37;">REST API</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="#" class="project-link">View Project →</a>
+                        <a href="#" class="project-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================
+     CV SECTION — Paper-style PDF Layout (Black & White)
+     Add this after your Projects section in index.html
+     ================================================================ -->
+
+<section class="cv-section section-padding" id="cv">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Curriculum Vitae</span>
+            
+            <p class="section-sub mx-auto">
+                A small sampling of some of the projects I've worked on.
+            </p>
+        </div>
+
+        <!-- CV Paper -->
+        <div class="cv-paper" data-aos="fade-up" data-aos-delay="100">
+            <div class="cv-content">
+
+                <!-- Header -->
+                <div class="cv-header">
+                    <h1 class="cv-title">Jayanth A H</h1>
+                    <p class="cv-subtitle"><a href="mailto:ahjayanth@gmail.com">ahjayanth@gmail.com</a> | <a href="tel:8151807450"> 8151807450</a> </p>
+                </div>
+
+                <!-- Profile -->
+                <div class="cv-section-block">
+                    <h2 class="cv-section-title">Profile</h2>
+                    <p class="cv-text">
+                        Aspiring Java Full-Stack Developer with expertise in frontend technologies like React.js and a strong foundation in backend development. Currently pursuing a Java full-stack development course to enhance my skills. Passionate about technology and entrepreneurship, I am also working on launching an e-commerce fashion website. Dedicated to continuous learning, innovation, and building scalable applications.
+                    </p>
+                </div>
+
+                <!-- Professional Experience -->
+                <div class="cv-section-block">
+                    <h2 class="cv-section-title">Professional Experience</h2>
+                    <div class="cv-experience">
+                        <div class="cv-experience-header">
+                            <span class="cv-company">Web Developer | Digitalpitha</span>
+                        </div>
+                        <ul class="cv-list">
+                            <li>Developed and maintained responsive websites using WordPress, HTML, CSS, JavaScript, and PHP.</li>
+                            <li>Designed wireframes and UI/UX prototypes in Figma.</li>
+                            <li>Customized themes and plugins based on client requirements.</li>
+                            <li>Collaborated with developers and designers to deliver responsive web solutions.</li>
+                            <li>Participated in testing, deployment, and maintenance activities.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="cv-section-block">
+                    <h2 class="cv-section-title">Education</h2>
+
+                    <div class="cv-education-item">
+                        <div class="cv-edu-year">2021 - 2024</div>
+                        <div class="cv-edu-school">Edurite College of Management Studies.</div>
+                        <div class="cv-edu-degree">BCA</div>
+                    </div>
+
+                    <div class="cv-education-item">
+                        <div class="cv-edu-year">2018 - 2021</div>
+                        <div class="cv-edu-school">Shri Vidyalaya PU College</div>
+                        <div class="cv-edu-degree">PUC</div>
+                    </div>
+
+                    <div class="cv-education-item">
+                        <div class="cv-edu-year">2018</div>
+                        <div class="cv-edu-school">Sri Ramakrishna Vidyanikethana School</div>
+                        <div class="cv-edu-degree">SSLC</div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="cv-section-block">
+                    <h2 class="cv-section-title">Technical Skills</h2>
+                    <ul class="cv-list cv-skills-list">
+                        <li><strong>Programming Languages/Frameworks:</strong> Java, SQL, Spring Boot</li>
+                        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Bootstrap, ReactJS</li>
+                        <li><strong>Operating Systems:</strong> Windows</li>
+                        <li><strong>Other Tools/Software:</strong> VS Code, Eclipse, MySQL</li>
+                    </ul>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="cv-section-block">
+                    <h2 class="cv-section-title">Personal Interests</h2>
+                    <ul class="cv-list cv-interests-list">
+                        <li>Video Editing</li>
+                        <li>Travelling</li>
+                        <li>Exercise</li>
+                    </ul>
+                </div>
+
+                <!-- Footer line -->
+                <div class="cv-footer-line"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- ================================================================
+     CERTIFICATE SECTION — Floating Animated Cards
+     Add this after your CV section in index.html
+     ================================================================ -->
+
+<section class="certificate-section section-padding" id="certificate">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Credentials</span>
+            <h2 class="section-title">
+                Certificates &amp; <span class="highlight">Achievements</span>
+            </h2>
+            <p class="section-sub mx-auto">
+                Recognitions and credentials from my learning journey
+            </p>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="certificate-grid">
+
+            <!-- Certificate 1: Full-Stack Developer -->
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="certificate-image">
+                    <img src="img/cce_certificate20302_.jpg" alt="Full-Stack Developer Certificate" />
+                    <div class="certificate-overlay">
+                        <a href="img/cce_certificate20302_.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-body">
+                    <h3 class="certificate-title">Full-Stack Developer</h3>
+                    <p class="certificate-issuer">IT Vedant</p>
+                    <div class="certificate-footer">
+                        <a href="img/cce_certificate20302_.jpg" target="_blank" class="certificate-link">View Certificate →</a>
+                    </div>
+                </div>
+                <div class="certificate-glow"></div>
+            </div>
+
+            <!-- Certificate 2: Java Fundamentals -->
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="certificate-image">
+                    <img src="img/Screenshot 2025-07-02 001301.png" alt="Java Fundamentals Certificate" />
+                    <div class="certificate-overlay">
+                        <a href="img/Java_fundamentals.pdf" target="_blank" class="certificate-view">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-body">
+                    <h3 class="certificate-title">Java Fundamentals</h3>
+                    <p class="certificate-issuer">IBM</p>
+                    <div class="certificate-footer">
+                        <a href="img/Java_fundamentals.pdf" target="_blank" class="certificate-link">View Certificate →</a>
+                    </div>
+                </div>
+                <div class="certificate-glow"></div>
+            </div>
+
+            <!-- Certificate 3: React -->
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="certificate-image">
+                    <img src="img/react_204_1751394640.jpg" alt="React Certificate" />
+                    <div class="certificate-overlay">
+                        <a href="img/react_204_1751394640.jpg" target="_blank" class="certificate-view">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-body">
+                    <h3 class="certificate-title">React</h3>
+                    <p class="certificate-issuer">IT Vedanth</p>
+                    <div class="certificate-footer">
+                        <a href="img/react_204_1751394640.jpg" target="_blank" class="certificate-link">View Certificate →</a>
+                    </div>
+                </div>
+                <div class="certificate-glow"></div>
+            </div>
+
+            <!-- Certificate 4: SQL and Relational Database -->
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="certificate-image">
+                    <img src="img/Screenshot 2025-07-02 001528.png" alt="SQL Certificate" />
+                    <div class="certificate-overlay">
+                        <a href="img/SQL_and RelationalDataBase.pdf" target="_blank" class="certificate-view">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-body">
+                    <h3 class="certificate-title">SQL &amp; Relational Database</h3>
+                    <p class="certificate-issuer">IBM</p>
+                    <div class="certificate-footer">
+                        <a href="img/SQL_and RelationalDataBase.pdf" target="_blank" class="certificate-link">View Certificate →</a>
+                    </div>
+                </div>
+                <div class="certificate-glow"></div>
+            </div>
+
+            <!-- Certificate 5: Advanced Web Design -->
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="certificate-image">
+                    <img src="img/advancedwebdesign.png" alt="Advanced Web Design Certificate" />
+                    <div class="certificate-overlay">
+                        <a href="img/advancedwebdesign_224_1735887729.pdf" target="_blank" class="certificate-view">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="certificate-body">
+                    <h3 class="certificate-title">Advanced Web Design</h3>
+                    <p class="certificate-issuer">IT Vedanth</p>
+                    <div class="certificate-footer">
+                        <a href="img/advancedwebdesign_224_1735887729.pdf" target="_blank" class="certificate-link">View Certificate →</a>
+                    </div>
+                </div>
+                <div class="certificate-glow"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ─── CONTACT ─── -->
+    <!-- ================================================================
+     CONTACT SECTION — Glassmorphism Form Design
+     Add this after your Certificate section in index.html
+     ================================================================ -->
+
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">
+                Contact <span class="highlight">Me</span>
+            </h2>
+            <p class="section-sub mx-auto">
+                Interested if I'd be the right fit for your team? Fill in this form and I will respond within 24-48 hours.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="floatingName">
+                            <i class="fas fa-user"></i> Enter Name *
+                        </label>
+                        <input type="text" class="form-control" id="floatingName" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="floatingEmail">
+                            <i class="fas fa-envelope"></i> Enter Email *
+                        </label>
+                        <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="your@email.com" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="floatingPhone">
+                            <i class="fas fa-phone"></i> Enter Phone *
+                        </label>
+                        <input type="tel" class="form-control" id="floatingPhone" name="phone" placeholder="+1 234 567 890" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="floatingSubject">
+                            <i class="fas fa-tag"></i> Subject
+                        </label>
+                        <input type="text" class="form-control" id="floatingSubject" name="subject" placeholder="Project Inquiry" />
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="floatingMessage">
+                        <i class="fas fa-comment"></i> Leave a comment here *
+                    </label>
+                    <textarea class="form-control" id="floatingMessage" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div id="formResult" class="form-result"></div>
+            </form>
+        </div>
+    </div>
+</section>
+    <!-- ─── FOOTER ─── -->
+    <!-- ================================================================
+     FOOTER SECTION — Black Background
+     Add this after your Contact section in index.html
+     ================================================================ -->
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content">
+
+            <!-- Brand / Logo -->
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="brand-code">&lt;</span>J<span class="brand-code">/&gt;</span>
+                    
+                </a>
+                <p class="footer-tagline">
+                    Turning vision into reality with code and design.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-info">
+                <h4 class="footer-heading">Get in Touch</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:ahjayanth@gmail.com">ahjayanth@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+91 8151807450">+91 8151807450</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shivamogga, India</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+                <h4 class="footer-heading">Follow Me</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/Jayanth2017" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jayanth-ah-977829222/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/_mr_jayanth_17?igsh=MTF5aHBhZHphYzBwZw==" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    
+                </div>
+                <div class="footer-availability">
+                    <span class="availability-dot"></span>
+                    Available for work
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2025 <strong>Jayanth A H</strong>. All rights reserved.
+            </p>
+            <p class="footer-credit">
+                Built with <i class="fas fa-heart" style="color: var(--gold);"></i> by Jayanth
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- ─── SCRIPTS ─── -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
     </script>
-    
-     </section>
-
-
-     <!-- Footer -->
-     <footer>
-      <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-between">
-        <p>Copyright © 2025 Jayanth A H</p>
-        <ul class="social-icons d-flex">
-          <a href="https://github.com/Jayanth2017" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-github"></i></small></a>
-          <a href="mailto:ahjayanth@gmail.com" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-regular fa-envelope"></i></small></a>
-          <a href="https://www.linkedin.com/in/jayanth-ah-977829222/" class="bg-primary mx-2 text-white d-flex align-items-center justify-content-center text-decoration-none rounded-circle"><small><i class="fa-brands fa-linkedin-in"></i></small></a>
-        </ul>
-      </div>
-     </footer>
-    
-     <!-- Bootstrap script link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script >
-      
-  document.addEventListener("DOMContentLoaded", function () {
-    var navbarCollapse = document.querySelector(".navbar-collapse");
-    var navbarItems = document.querySelectorAll(".nav-link");
-
-    navbarItems.forEach(function (item) {
-      item.addEventListener("click", function () {
-        if (navbarCollapse.classList.contains("show")) {
-          new bootstrap.Collapse(navbarCollapse, { toggle: true });
-        }
-      });
-    });
-  });
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
     </script>
-   <script>
-    tsParticles.load("tsparticles", {
-      fpsLimit: 60,
-      background: {
-        color: "transparent"
-      },
-      fullScreen: {
-        enable: false, // important! only inside hero
-      },
-      particles: {
-        number: {
-          value: 80,
-          density: {
-            enable: true,
-            area: 800
-          }
-        },
-        color: {
-          value: "#000000"
-        },
-        links: {
-          enable: true,
-          distance: 150,
-          color: "#000000",
-          opacity: 0.5,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: "none",
-          outModes: "out"
-        },
-        size: {
-          value: 3
-        }
-      },
-      interactivity: {
-        events: {
-          onHover: {
-            enable: true,
-            mode: "repulse"
-          },
-          onClick: {
-            enable: true,
-            mode: "push"
-          }
-        },
-        modes: {
-          repulse: {
-            distance: 100
-          },
-          push: {
-            quantity: 4
-          }
-        }
-      }
-    });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
     </script>
-      
-   
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js">
+    </script>
+
+    <!-- ===== SEPARATE JS ===== -->
+    <script src="js/script.js"></script>
+</body>
 </html>
